@@ -1,10 +1,13 @@
-import { RecipeList } from './RecipeList';
-import recipes from '../recipes';
+import { RecipeList } from './RecipeList/RecipeList';
+import recipes from 'recipes';
+import { GlobalStyle } from 'components/GlobalStyle';
+import { Layout } from './Layout/Layout';
 
 export const App = () => {
   return (
-    <div>
+    <Layout>
       <RecipeList items={recipes} />
-    </div>
+      <GlobalStyle />
+    </Layout>
   );
 };
