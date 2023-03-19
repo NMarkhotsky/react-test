@@ -1,10 +1,9 @@
-import { GlobalStyle } from 'components/GlobalStyle';
-import { Layout } from './Layout/Layout';
+import { Counter } from './Counter/Counter';
 
 export const App = () => {
   return (
-    <Layout>
-      <GlobalStyle />
-    </Layout>
+    <>
+      <Counter />
+    </>
   );
 };
